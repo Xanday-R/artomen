@@ -1,0 +1,110 @@
+body {
+    main {
+        div {
+            &.categorys {
+                .listCategory {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    @media screen and (max-width: 1024px) {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    div {
+                        width: 25vw;
+                        height: 20vh;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        a {
+                            text-decoration: none;
+                            color: black;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                        &:hover {
+                            -webkit-box-shadow: 0px 0px 15px 8px rgba(0,0,0,0.19); 
+                            box-shadow: 0px 0px 15px 8px rgba(0,0,0,0.19);
+                        }
+                        @media screen and (max-width: 1024px) {
+                            padding: 16px 0px;
+                            width: 100%;
+                            height: 100%;
+                            a {
+                                font-size: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+            &.aboutService {
+                div {
+                    display: flex;
+                    justify-content: space-evenly;
+                    @media screen and (max-width: 1024px) {
+                        justify-content: space-evenly;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    h3 {
+                        width: 50%;
+                        text-align: left;
+                        @media screen and (max-width: 1024px) {
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
+                    img {
+                        @media screen and (max-width: 1024px) {
+                            max-width: 100vw;
+                        }
+                    }
+                }
+            }
+            &.listTeam {
+                .listTeamSecond {
+                    display: flex;
+                    justify-content: center;
+                    @media screen and (max-width: 1024px) {
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    div {
+                        width: 250px;
+                        img {
+                            border-radius: 15px;
+                            padding: 0px 6px;
+                        }
+                    }
+                }
+            }
+            &.buttonDiv {
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background: #212529;
+                color: white;
+                h2 {
+                    margin-bottom: 42px;
+                }
+            }
+        }
+    }
+    footer {
+        background: #f8f9fa;
+    }
+}
+
+// FORM
+
+.modal-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    min-height: 20vh;
+}

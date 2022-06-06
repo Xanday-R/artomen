@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/forall.css">
+    <link rel="stylesheet" href="../css/forall.css.map">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/admin.css.map">
+    <!--ICON-->
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <title>СЦ «Комсерал» - Адмін-панель</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Комсерал</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link listButton" onclick="Display('firstForm')" href="#firstForm">Заявки</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link statisticButton" onclick="Display('secondForm')" href="#secondForm">Статистика</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container-md">
+        <div class="firstForm padding">
+            <h2>Заявки на надання послуги</h2>
+            <div class="list">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="firstPart">
+                            <div><i class="bi bi-person-fill"></i>#NAME</div>
+                            <div><i class="bi bi-telephone-fill"></i>#NUMBER</div>
+                            <div><i class="bi bi-bookmark-fill"></i>#CATEGORY</div>
+                        </div>
+                        <div class="secondPart">
+                            <p>#COMMENTARY</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Видалити заявку на надання послуги">
+                            <i class="bi bi-trash-fill" onclick="Delete('#ID')"></i>
+                        </span>
+                        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Підтвердити виконання послуги">
+                            <i class="bi bi-check2" onclick="Confirm('#ID')"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="padding secondForm" style="display: none;">
+            <h2>Статистика</h2>
+            <div class="statisticDiv">
+                <div class="card text-center" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Кількість заявок</h5>
+                      <p class="card-text">#COUNT</p>
+                    </div>
+                </div>
+                <div class="card text-center" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Невиконані</h5>
+                      <p class="card-text">#COUNT</p>
+                    </div>
+                </div>
+                <div class="card text-center" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Виконані</h5>
+                      <p class="card-text">#COUNT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/admin.js"></script>
+</body>
+</html>

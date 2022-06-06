@@ -1,0 +1,29 @@
+body {
+    main {
+        div {
+            &.priceList {
+                .listCategory {
+                    .alert {
+                        display: flex;
+                        justify-content: space-between;
+                        p {
+                            margin: 0px;
+                            text-align: left;
+                            &:last-child {
+                                color: #0f5132;
+                                background-color: #bfded0;
+                                border-radius: 3px;
+                                min-width: 64px;
+                            }
+                        }
+                        @media screen and (max-width: 1024px) {
+                            justify-content: space-between;
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

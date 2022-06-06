@@ -1,0 +1,54 @@
+body {
+    main {
+        .list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            @media screen and (max-width: 1024px) {
+                justify-content: center;
+            }
+            .card {
+                min-width: 25vw;
+                margin-bottom: 1em;
+                .card-body {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0rem !important;
+                    div {
+                        padding: 1rem;
+                        &.firstPart {
+                            display: flex;
+                            flex-direction: column;
+                            border-right: 1px solid #e6e6e6;
+                            div {
+                                display: flex;
+                            }
+                        }
+                        &.secondPart {
+                            width: 75%;
+                            display: flex;
+                        }
+                    }
+                }
+                .card-footer {
+                    text-align: left;
+                    span {
+                        i {
+                            font-size: 24px;
+                            &.bi-trash-fill:hover {
+                                color: #dc3545;
+                            }
+                            &.bi-check2:hover {
+                                color: #198754;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .statisticDiv {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+}

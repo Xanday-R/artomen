@@ -1,0 +1,14 @@
+body {
+    header {
+        .numbers {
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+            .nav-item:last-child {
+                @media screen and (min-width: 1024px) {
+                    padding-left: 24px;
+                }
+            }
+        }        
+    }
+}

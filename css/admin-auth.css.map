@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,IADA,CACA,IAAI,CAAC;EACD,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;CACtB;;AANL,AAOI,IAPA,CAOA,KAAK,CAAC;EACF,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,IAAI;EACT,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "admin-auth.scss"
+    ],
+    "names": [],
+    "file": "admin-auth.css"
+}

@@ -1,0 +1,87 @@
+body main .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+  body main .list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+body main .list .card {
+  min-width: 25vw;
+  margin-bottom: 1em;
+}
+
+body main .list .card .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0rem !important;
+}
+
+body main .list .card .card-body div {
+  padding: 1rem;
+}
+
+body main .list .card .card-body div.firstPart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-right: 1px solid #e6e6e6;
+}
+
+body main .list .card .card-body div.firstPart div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .list .card .card-body div.secondPart {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .list .card .card-footer {
+  text-align: left;
+}
+
+body main .list .card .card-footer span i {
+  font-size: 24px;
+}
+
+body main .list .card .card-footer span i.bi-trash-fill:hover {
+  color: #dc3545;
+}
+
+body main .list .card .card-footer span i.bi-check2:hover {
+  color: #198754;
+}
+
+body main .statisticDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+/*# sourceMappingURL=admin.css.map */

@@ -1,0 +1,41 @@
+* {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+main {
+    div {
+        text-align: center;
+        h2 {
+            text-align: center;
+            margin-bottom: 1em;
+            @media screen and (max-width: 1024px) {
+                font-size: 32px;
+            }
+        }
+        button {
+            outline: none;
+            background: none;
+            border-radius: 3px;
+            padding: 16px;
+            &.light {
+                color: white;
+                border: 1px solid white;
+                &:hover {
+                    background: white;
+                    color: #212529;
+                }
+            }
+            &.dark {
+                color: #212529;
+                border: 1px solid #212529;
+                &:hover {
+                    background: #212529;
+                    color: white;
+                }
+            }
+        }
+        &.padding {
+            padding-top: 3em;
+        }
+    }
+}
